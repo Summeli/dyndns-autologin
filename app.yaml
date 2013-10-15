@@ -1,0 +1,14 @@
+application: dyndns-autologin
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /cron/autologin
+  script: cron.app
+  login: admin
+
+builtins:
+- deferred: on
+- appstats: on

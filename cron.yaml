@@ -1,0 +1,5 @@
+cron:
+- description: autologin to dyndns.com
+  url: /cron/autologin
+  #login weekly to the dyndns
+  schedule: every monday 00:00
